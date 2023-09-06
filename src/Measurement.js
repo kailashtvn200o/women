@@ -5,30 +5,30 @@ import VolumeSliderProgressBar from './Progressbar';
 import './Progressbar.css';
 import Header from './Header'
 export default function Measurement() {
-    const [activeButton, setActiveButton] = useState(null);
+    // const [activeButton, setActiveButton] = useState(null);
 
-    const handleButtonClick = (buttonName) => {
-        setActiveButton(buttonName);
-    };
+    // const handleButtonClick = (buttonName) => {
+    //     setActiveButton(buttonName);
+    // };
 
     return (
         <>
-        <Header/>
+            <Header />
             <div className='page'>
-              
+
                 <div className='nxtxt'>Set your measurements</div>
                 <div className='buttonContainer'>
-                    <button
+                    {/* <button
                         className={`standardButton ${activeButton === 'standard' ? 'activeButton' : ''}`}
                         onClick={() => handleButtonClick('standard')}
                     >
                         <div className='buttontxt1'>
                             Standard Measurements
                         </div>
-                    </button>
-                    <button
-                        className={`customizeButton ${activeButton === 'customize' ? 'activeButton' : ''}`}
-                        onClick={() => handleButtonClick('customize')}
+                    </button> */}
+                    {/* <button
+                        // className={`customizeButton ${activeButton === 'customize' ? 'activeButton' : ''}`}
+                        // onClick={() => handleButtonClick('customize')}
                     >
                         <div className='buttontxt2'>
                             Customize Measurements
@@ -69,18 +69,18 @@ export default function Measurement() {
                     </div>
 
 
-                )}
-                {activeButton === 'customize' && (
-                    <div className='rectangle2'>
-                        <VolumeSliderProgressBar />
-                    </div>
+                )} */}
+                        {/* //{activeButton === 'customize' && ( */}
+                        <div className='rectangle2'>
+                            <VolumeSliderProgressBar />
+                        </div>
 
-                )}
+                        </div>
 
             </div>
-            <Footer/>
+                <Footer />
 
-        </>
+            </>
 
-    );
-}
+            );
+                }
